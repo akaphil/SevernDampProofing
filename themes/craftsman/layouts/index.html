@@ -1,0 +1,240 @@
+{{ define "main" }}
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+        Over {{ .Site.Params.experience }} Years' Experience
+      </div>
+
+      <h1>Damp Proofing Specialists in Gloucestershire &amp; the Cotswolds</h1>
+
+      <p class="hero-subtitle">
+        Rising damp, penetrating damp, condensation, basement tanking and timber treatment — diagnosed properly and fixed at the source. Honest, survey-led advice with no scaremongering and no selling you treatments you don't need.
+      </p>
+
+      <div class="hero-cta">
+        <a href="/contact/" class="btn btn--white btn--large">
+          Book a Free Survey
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+        <a href="tel:{{ .Site.Params.company.phone | replaceRE " " "" }}" class="btn btn--secondary" style="border-color: rgba(255,255,255,0.5); color: white;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          {{ .Site.Params.company.phone }}
+        </a>
+      </div>
+
+      <div class="hero-features">
+        <div class="hero-feature">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          Honest Diagnosis
+        </div>
+        <div class="hero-feature">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          BBA-Certified Treatments
+        </div>
+        <div class="hero-feature">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          Free Surveys
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-image">
+    <img src="/images/dampproofinghomeimage.jpg" alt="Damp proofing specialist treating a wall in a Gloucestershire property">
+  </div>
+</section>
+
+<!-- Services Section -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Our Damp Proofing Services</h2>
+      <div class="divider"></div>
+      <p>From rising damp and basement waterproofing to timber treatment — we diagnose the real cause first, then carry out only the work your property genuinely needs.</p>
+    </div>
+
+    <div class="services-grid stagger">
+      <!-- Rising Damp - Featured -->
+      <div class="service-card service-card--featured">
+        <div class="service-image">
+          <span class="service-badge">Most Requested</span>
+          <img src="/images/dampproofing.jpg" alt="Rising damp treatment and damp proof course injection">
+        </div>
+        <div class="service-content">
+          <h3>Rising Damp Treatment</h3>
+          <p>Damp-proof course (DPC) injection and replastering where genuine rising damp is confirmed — never before. Most "rising damp" turns out to be something cheaper to fix.</p>
+          <ul class="service-features">
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Damp-proof course injection</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Salt-resistant replastering</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Guaranteed treatments</li>
+          </ul>
+          <a href="/rising-damp/" class="btn btn--primary">Learn More</a>
+        </div>
+      </div>
+
+      <!-- Basement Tanking -->
+      <div class="service-card">
+        <div class="service-image">
+          <img src="/images/cotswoldstonehouse.jpg" alt="Basement and cellar tanking waterproofing">
+        </div>
+        <div class="service-content">
+          <h3>Basement &amp; Cellar Tanking</h3>
+          <p>Waterproof tanking and cavity-drain membrane systems to turn damp cellars and basements into dry, usable space.</p>
+          <ul class="service-features">
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Cementitious tanking systems</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Cavity-drain membranes</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Usable, dry rooms</li>
+          </ul>
+          <a href="/basement-tanking/" class="btn btn--primary">Learn More</a>
+        </div>
+      </div>
+
+      <!-- Damp Surveys -->
+      <div class="service-card">
+        <div class="service-image">
+          <img src="/images/hero.jpg" alt="Professional damp survey of a property">
+        </div>
+        <div class="service-content">
+          <h3>Damp Surveys</h3>
+          <p>A proper diagnostic survey with moisture readings and a clear written report — so you know exactly what's wrong before spending a penny on treatment.</p>
+          <ul class="service-features">
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Moisture &amp; salt analysis</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Clear written report</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Free initial survey</li>
+          </ul>
+          <a href="/damp-survey/" class="btn btn--primary">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <p class="text-center mt-lg" style="color: var(--warm-gray);">
+      We also handle <a href="/services/" style="font-weight:600;">penetrating damp, condensation &amp; mould control, and timber treatment</a> (woodworm, wet &amp; dry rot).
+    </p>
+  </div>
+</section>
+
+<!-- About/Trust Section -->
+<section class="section section--stone">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-image" data-animate>
+        <img src="/images/Jon.png" alt="Experienced damp proofing specialist">
+        <div class="experience-badge">
+          <span class="number">{{ .Site.Params.experience }}</span>
+          <span class="label">Years Experience</span>
+        </div>
+      </div>
+
+      <div class="about-content">
+        <h2>Damp Proofing Done Honestly</h2>
+        <p class="lead">The damp-proofing industry has a reputation for over-diagnosing and over-selling. We do the opposite: we find the actual cause and recommend the least intervention that fixes it for good.</p>
+        <p>Based in Stroud and serving the whole of Gloucestershire and the Cotswolds, we've spent decades sorting damp in homes of every age — from modern houses with condensation to solid-walled properties with genuine penetrating or rising damp. You'll get a straight answer and a fair price.</p>
+
+        <div class="trust-points">
+          <div class="trust-point">
+            <div class="trust-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </div>
+            <div>
+              <h4>Diagnosis First</h4>
+              <p>We identify the real cause before recommending any treatment — no guesswork, no scaremongering.</p>
+            </div>
+          </div>
+
+          <div class="trust-point">
+            <div class="trust-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+            </div>
+            <div>
+              <h4>Guaranteed, Certified Work</h4>
+              <p>BBA-certified products and treatments backed by guarantees where appropriate.</p>
+            </div>
+          </div>
+
+          <div class="trust-point">
+            <div class="trust-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+            </div>
+            <div>
+              <h4>Local &amp; Established</h4>
+              <p>Gloucestershire-based, with decades of work across the county and the Cotswolds.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Heritage / sister-company band -->
+<section class="section">
+  <div class="container">
+    <div class="content-block content-block--gold">
+      <h4>Period or listed property?</h4>
+      <p>Older, solid-walled and listed buildings need <em>breathable</em> repairs — lime plaster and render, not cement or chemical injection. For heritage work like that, our sister company <a href="https://severnlime.co.uk" rel="noopener"><strong>Severn Lime</strong></a> specialises in traditional lime techniques for Cotswold period homes.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Areas Section -->
+<section class="section section--stone">
+  <div class="container">
+    <div class="section-header">
+      <h2>Areas We Cover</h2>
+      <div class="divider"></div>
+      <p>Damp proofing across Gloucestershire and the Cotswolds from our base in Stroud.</p>
+    </div>
+
+    <div class="areas-grid stagger">
+      <a href="/areas/" class="area-card">
+        <img src="/images/stroud.jfif" alt="Damp proofing Stroud and Stonehouse">
+        <div class="area-card-overlay">
+          <h3>Stroud &amp; Stonehouse</h3>
+          <p>Nailsworth, Minchinhampton, Cainscross &amp; more</p>
+          <span class="btn btn--white btn--small">View Areas →</span>
+        </div>
+      </a>
+
+      <a href="/areas/" class="area-card">
+        <img src="/images/cirencester.jfif" alt="Damp proofing Cirencester and Cheltenham">
+        <div class="area-card-overlay">
+          <h3>Cirencester &amp; Cheltenham</h3>
+          <p>Gloucester, Cirencester &amp; surrounds</p>
+          <span class="btn btn--white btn--small">View Areas →</span>
+        </div>
+      </a>
+
+      <a href="/areas/" class="area-card">
+        <img src="/images/tetbury.jfif" alt="Damp proofing Tetbury and the Cotswolds">
+        <div class="area-card-overlay">
+          <h3>Tetbury &amp; Cotswolds</h3>
+          <p>Tetbury, Dursley &amp; nearby villages</p>
+          <span class="btn btn--white btn--small">View Areas →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+  <div class="container">
+    <h2>Got a Damp Problem? Let's Diagnose It Properly.</h2>
+    <p>Book a free, no-obligation survey. We'll tell you what's actually causing the damp and what it will honestly take to fix it.</p>
+    <div class="cta-buttons">
+      <a href="/contact/" class="btn btn--white btn--large">
+        Book a Free Survey
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
+      <a href="tel:{{ .Site.Params.company.phone | replaceRE " " "" }}" class="btn btn--secondary btn--large" style="border-color: rgba(255,255,255,0.5); color: white;">
+        Call {{ .Site.Params.company.phone }}
+      </a>
+    </div>
+  </div>
+</section>
+
+{{ end }}

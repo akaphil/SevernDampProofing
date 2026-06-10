@@ -1,0 +1,47 @@
+baseURL: "https://severndampproofingltd.com/"
+languageCode: "en-gb"
+title: "Damp Proofing Gloucestershire & Cotswolds | Severn Damp Proofing"
+theme: "craftsman"
+
+# SEO and site settings
+enableRobotsTXT: true
+relativeURLs: false
+
+# This is a small brochure site — no tags/categories taxonomy pages
+disableKinds: ["taxonomy", "term"]
+
+# Site parameters
+params:
+  # Company info
+  company:
+    name: "Severn Damp Proofing Ltd"
+    phone: "07980 222830"
+    email: "severndampproofing@icloud.com"
+    address: "Stroud, Gloucestershire"
+
+  # SEO defaults
+  description: "Damp proofing specialists in Gloucestershire and the Cotswolds. Rising damp treatment, basement tanking, condensation control and timber treatment — honest, survey-led diagnosis with no scaremongering. Free damp surveys."
+  keywords: "damp proofing, rising damp treatment, damp proof course, DPC injection, basement tanking, cellar waterproofing, penetrating damp, condensation, mould control, timber treatment, woodworm, dry rot, damp survey, Gloucestershire, Cotswolds, Stroud, Gloucester, Cheltenham, Cirencester"
+  author: "Severn Damp Proofing Ltd"
+
+  # Social/OG
+  ogImage: "/images/dampproofinghomeimage.jpg"
+
+  # Features
+  showContactFloat: true
+
+  # Trust signals
+  experience: "35+"
+
+# Markup settings (content pages use some inline HTML blocks)
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    style: monokai
+
+# Sitemap settings
+sitemap:
+  changefreq: weekly
+  priority: 0.5
